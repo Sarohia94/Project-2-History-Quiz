@@ -1,2 +1,67 @@
 /* Google Font @import URL */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Khojki&family=Rubik+Distressed&display=swap');
+
+/* Convention setting margin, padding and border */
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Noto Serif Khojki', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* headings */
+.heading {
+    font-family: 'Rubik Distressed', serif;
+    font-size: 80px;
+    font-weight: 600;
+    color: #114411;
+}
+
+.intro {
+    font-weight: 400;
+    color: #114411;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* start game and scoreboard buttons */
+#start-quiz {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#scoreboard {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    font-size: 36px;
+    width: 100%;
+    padding: 15px;
+    border-radius: 12px;
+    color: #114411;
+    background-color:#f3f3f4;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    background-color: #114411;
+    color: white;
+}
