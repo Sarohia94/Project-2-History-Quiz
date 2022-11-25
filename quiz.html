@@ -28,14 +28,21 @@
         <h1 class="heading">History Quiz</h1>
     </a>
 
-    <h2 class="intro">Test your history knowledge by taking this quiz!</h2>
+    <div class="quiz-area">
+        <div class="counter-area">
+            <p class="question-count">Question:<span id="q-number">1</span></p>
+            <p class="score-count"><span id="s-number">0</span></p>
+        </div>
 
-    <div id="start-quiz">
-        <a href="quiz.html" class="btn" >Start</a>
-    </div>
+        <hr>
+        <h2 id="question"></h2>
 
-    <div id="scoreboard">
-        <a href="" class="btn">Scoreboard</a>
+        <div class="answer-choices">
+            <button class="btn answers" id="answer1"></button>
+            <button class="btn answers" id="answer2"></button>
+            <button class="btn answers" id="answer3"></button>
+            <button class="btn answers" id="answer4"></button>
+        </div>
     </div>
 
     <!-- Javascript-->
