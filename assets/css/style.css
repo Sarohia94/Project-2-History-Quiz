@@ -50,6 +50,12 @@ a {
     text-decoration: none;
 }
 
+#quiz-type {
+    color: #78290f;
+    font-weight: 600;
+    font-size: 18px;
+}
+
 /* start game and scoreboard buttons */
 #start-quiz {
     margin-top: 30px;
