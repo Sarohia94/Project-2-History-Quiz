@@ -102,6 +102,12 @@ const myQuestions = [
     },
 ];
 
+//Counter area for question and score number
+let questionNo = 1;
+let questionCounter = document.getElementById("q-number");
+let scoreNo = 0;
+let scoreCounter = document.getElementById("s-number");
+
 function beginQuiz() {
 
 }
