@@ -101,3 +101,19 @@ const myQuestions = [
         correctAnswer: "answer1"         
     },
 ];
+
+function beginQuiz() {
+
+}
+
+function displayQuestion() {
+
+}
+
+function checkAnswer() {
+
+}
+
+function incrementScore() {
+
+}
