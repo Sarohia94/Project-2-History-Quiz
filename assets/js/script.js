@@ -115,22 +115,38 @@ const myQuestions = [
             answer4: "2 years"
         },
         correctAnswer: "answer1"         
-    },
+    }
 ];
 
-function startQuiz() {
+//Shuffle variables - https://www.youtube.com/watch?v=riDzcEQbX6k
+let shuffleQuestions; 
+let currentQuestion; 
 
-    startQuiz();
+function startQuiz() {
+    questionNo = 1;
+    scoreNo = 0;
+    shuffleQuestions = myQuestions.sort(() => Math.random() - 0.5);
+    console.log("shuffleQuestions", shuffleQuestions);
+    currentQuestion = 0;
+    displayQuestion();
+    setNextQuestion();
 }
 
-function displayQuestion() {
-    let q = myQuestions(0);
-    question.innerHTML = q.question;
-    answer1.innerHTML = q.answer1;
-    answer2.innerHTML = q.answer2;
-    answer3.innerHTML = q.answer3;
-    answer4.innerHTML = q.answer4;
+function displayQuestion(myQuestions) {
+    question.innerHTML = myQuestions.question;
+    console.log(question.innerHTML);
+    answer1.innerHTML = myQuestions.answer1;
+    console.log(answer1.innerHTML);
+    answer2.innerHTML = myQuestions.answer2;
+    console.log(answer2.innerHTML);
+    answer3.innerHTML = myQuestions.answer3;
+    console.log(answer3.innerHTML);
+    answer4.innerHTML = myQuestions.answer4;
+    console.log(answer4.innerHTML);
+}
 
+function setNextQuestion() {
+    displayQuestion(shuffleQuestions[currentQuestion]);
 }
 
 function checkAnswer() {
@@ -140,3 +156,5 @@ function checkAnswer() {
 function incrementScore() {
 
 }
+
+startQuiz();
