@@ -1,3 +1,18 @@
+//Counter area for question and score number
+let questionNo = 1;
+let questionCounter = document.getElementById("q-number");
+let scoreNo = 0;
+let scoreCounter = document.getElementById("s-number");
+
+//Quiz area
+const question = document.getElementById("question")
+const answers = document.getElementsByClassName("answers")
+const answer1 = document.getElementById("answer1");
+const answer2 = document.getElementById("answer2");
+const answer3 = document.getElementById("answer3");
+const answer4 = document.getElementById("answer4");
+let correctAnswer;
+
 // Questions array
 const myQuestions = [
     {
@@ -101,12 +116,6 @@ const myQuestions = [
         correctAnswer: "answer1"         
     },
 ];
-
-//Counter area for question and score number
-let questionNo = 1;
-let questionCounter = document.getElementById("q-number");
-let scoreNo = 0;
-let scoreCounter = document.getElementById("s-number");
 
 function beginQuiz() {
 
