@@ -12,6 +12,7 @@ const answer2 = document.getElementById("answer2");
 const answer3 = document.getElementById("answer3");
 const answer4 = document.getElementById("answer4");
 let correctAnswer;
+const nextQuestion = document.getElementById("nextQuestion")
 
 // Questions array
 const myQuestions = [
@@ -117,11 +118,18 @@ const myQuestions = [
     },
 ];
 
-function beginQuiz() {
+function startQuiz() {
 
+    startQuiz();
 }
 
 function displayQuestion() {
+    let q = myQuestions(0);
+    question.innerHTML = q.question;
+    answer1.innerHTML = q.answer1;
+    answer2.innerHTML = q.answer2;
+    answer3.innerHTML = q.answer3;
+    answer4.innerHTML = q.answer4;
 
 }
 
