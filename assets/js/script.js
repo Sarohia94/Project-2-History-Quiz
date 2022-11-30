@@ -11,8 +11,9 @@ const answer1 = document.getElementById("answer1");
 const answer2 = document.getElementById("answer2");
 const answer3 = document.getElementById("answer3");
 const answer4 = document.getElementById("answer4");
-let correctAnswer;
 const nextQuestion = document.getElementById("nextQuestion")
+let currentQuestionIndex = 0;
+let correctAnswer;
 
 // Questions array
 const myQuestions = [
@@ -125,24 +126,16 @@ let currentQuestion;
 function startQuiz() {
     questionNo = 1;
     scoreNo = 0;
-    shuffleQuestions = myQuestions.sort(() => Math.random() - 0.5);
-    console.log("shuffleQuestions", shuffleQuestions);
+    shuffleQuestions = myQuestions.sort(() => Math.random() - 0.5); // Tutor support from Gemma to sort the error messages showing in dev tools
+    console.log("shuffleQuestions", shuffleQuestions); // check the printout shuffles the array
     currentQuestion = 0;
-    displayQuestion();
     setNextQuestion();
 }
 
-function displayQuestion(myQuestions) {
-    question.innerHTML = myQuestions.question;
-    console.log(question.innerHTML);
-    answer1.innerHTML = myQuestions.answer1;
-    console.log(answer1.innerHTML);
-    answer2.innerHTML = myQuestions.answer2;
-    console.log(answer2.innerHTML);
-    answer3.innerHTML = myQuestions.answer3;
-    console.log(answer3.innerHTML);
-    answer4.innerHTML = myQuestions.answer4;
-    console.log(answer4.innerHTML);
+function displayQuestion() {
+    question.innerText = myQuestions[currentQuestionIndex].question; // Tutor support from Oisin to target the question property of MyQuestions array
+    currentQuestionIndex++;
+    ﻿console.log(myQuestions[currentQuestionIndex].question) //check printout of questions 
 }
 
 function setNextQuestion() {
