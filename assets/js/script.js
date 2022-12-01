@@ -6,7 +6,8 @@ let scoreCounter = document.getElementById("s-number");
 
 //Quiz area
 const question = document.getElementById("question")
-const answers = document.getElementsByClassName("answers")
+const answerButtons = document.getElementById("answer-btns")
+const answersClass = document.getElementsByClassName("answers")
 const answer1 = document.getElementById("answer1");
 const answer2 = document.getElementById("answer2");
 const answer3 = document.getElementById("answer3");
@@ -134,8 +135,13 @@ function startQuiz() {
 
 function displayQuestion() {
     question.innerText = myQuestions[currentQuestionIndex].question; // Tutor support from Oisin to target the question property of MyQuestions array
+    console.log(myQuestions[currentQuestionIndex].question); //check printout of questions
+    for (let i = 0; i < myQuestions.length; i++) {
+        answersClass[i].innerText = (myQuestions[currentQuestionIndex].answers["answer"+(i+1)]);
+        console.log((myQuestions[currentQuestionIndex].answers["answer"+(i+1)])); // Tutor support from Jason 
+    };
+    answerButtons.addEventListener("click", checkAnswer)
     currentQuestionIndex++;
-    ﻿console.log(myQuestions[currentQuestionIndex].question) //check printout of questions 
 }
 
 function setNextQuestion() {
