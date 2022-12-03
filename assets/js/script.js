@@ -1,24 +1,13 @@
 //Counter area for question and score number
-let questionNo = 1;
-let questionCounter = document.getElementById("q-number");
+let questionNo = 0;
 let scoreNo = 0;
-let scoreCounter = document.getElementById("s-number");
 
 //Quiz area
 const question = document.getElementById("question")
-const answerButtons = document.getElementById("answer-btns")
 const answersClass = document.getElementsByClassName("answers")
-const answer1 = document.getElementById("answer1");
-const answer2 = document.getElementById("answer2");
-const answer3 = document.getElementById("answer3");
-const answer4 = document.getElementById("answer4");
-const nextQuestion = document.getElementById("nextQuestion")
-let currentQuestionIndex = 0;
-let correctAnswer;
 
 // Questions array
-const myQuestions = [
-    {
+const myQuestions = [{
         question: "What year did WW1 start?",
         answers: {
             answer1: "1912",
@@ -26,7 +15,7 @@ const myQuestions = [
             answer3: "1918",
             answer4: "1939"
         },
-        correctAnswer: "answer1" 
+        correctAnswer: "answer1"
     },
     {
         question: "Who was the British Prime Minister during the Falklands War?",
@@ -36,7 +25,7 @@ const myQuestions = [
             answer3: "Margaret Thatcher",
             answer4: "Harold Wilson"
         },
-        correctAnswer: "answer3"         
+        correctAnswer: "answer3"
     },
     {
         question: "What year was the Cuban Missile Crisis?",
@@ -46,7 +35,7 @@ const myQuestions = [
             answer3: "1964",
             answer4: "1948"
         },
-        correctAnswer: "answer2"         
+        correctAnswer: "answer2"
     },
     {
         question: "Who was the Prime Minister at the outbreak of the Boer War?",
@@ -56,7 +45,7 @@ const myQuestions = [
             answer3: "Lord Aberdeen",
             answer4: "Lord Gladstone"
         },
-        correctAnswer: "answer2"         
+        correctAnswer: "answer2"
     },
     {
         question: "What year did the Battle of the Somme take place?",
@@ -66,7 +55,7 @@ const myQuestions = [
             answer3: "1917",
             answer4: "1940"
         },
-        correctAnswer: "answer2"         
+        correctAnswer: "answer2"
     },
     {
         question: "Which of the below was not part of the Russian Civil War 1917-1923?",
@@ -76,7 +65,7 @@ const myQuestions = [
             answer3: "Green Army",
             answer4: "White Army"
         },
-        correctAnswer: "answer2"         
+        correctAnswer: "answer2"
     },
     {
         question: "What is the name of the peacekeeping organisation formed after WWII?",
@@ -86,17 +75,17 @@ const myQuestions = [
             answer3: "Warsaw Pact",
             answer4: "Partnership for Peace"
         },
-        correctAnswer: "answer1"         
+        correctAnswer: "answer1"
     },
     {
-        question: "What is the name of the peacekeeping organisation formed after WWII?",
+        question: "The Tuskegee Airmen constituted a U.S. Army unit drawn from which group?",
         answers: {
-            answer1: "United Nations",
-            answer2: "NATO",
-            answer3: "Warsaw Pact",
-            answer4: "Partnership for Peace"
+            answer1: "African Americans",
+            answer2: "Women",
+            answer3: "World War 1 veterans",
+            answer4: "Youths under age 18"
         },
-        correctAnswer: "answer1"         
+        correctAnswer: "answer1"
     },
     {
         question: "When was the Korean Armistice Agreement signed?",
@@ -106,7 +95,7 @@ const myQuestions = [
             answer3: "1952",
             answer4: "1953"
         },
-        correctAnswer: "answer4"         
+        correctAnswer: "answer4"
     },
     {
         question: "How long did the Bosnian War last?",
@@ -116,44 +105,55 @@ const myQuestions = [
             answer3: "5 years",
             answer4: "2 years"
         },
-        correctAnswer: "answer1"         
+        correctAnswer: "answer1"
     }
 ];
+let currentQuestionIndex = 0;
 
 //Shuffle variables - https://www.youtube.com/watch?v=riDzcEQbX6k
-let shuffleQuestions; 
-let currentQuestion; 
+let shuffleQuestions;
+let currentQuestion;
 
 function startQuiz() {
-    questionNo = 1;
-    scoreNo = 0;
-    shuffleQuestions = myQuestions.sort(() => Math.random() - 0.5); // Tutor support from Gemma to sort the error messages showing in dev tools
-    console.log("shuffleQuestions", shuffleQuestions); // check the printout shuffles the array
+    shuffleQuestions = myQuestions.sort(() => Math.random() - 0.5); // tutor support from Gemma to sort the error messages showing in dev tools
+    console.log("shuffleQuestions", shuffleQuestions); // check if the printout shuffles the array
     currentQuestion = 0;
     setNextQuestion();
 }
 
+function setNextQuestion() {
+    displayQuestion(shuffleQuestions[currentQuestion]);
+    let previousQuestion = parseInt(document.getElementById("q-number").innerText);
+    document.getElementById("q-number").innerText = ++previousQuestion;
+    console.log(previousQuestion); // check
+}
+
 function displayQuestion() {
-    question.innerText = myQuestions[currentQuestionIndex].question; // Tutor support from Oisin to target the question property of MyQuestions array
-    console.log(myQuestions[currentQuestionIndex].question); //check printout of questions
-    for (let i = 0; i < myQuestions.length; i++) {
-        answersClass[i].innerText = (myQuestions[currentQuestionIndex].answers["answer"+(i+1)]);
-        console.log((myQuestions[currentQuestionIndex].answers["answer"+(i+1)])); // Tutor support from Jason 
+    question.innerText = myQuestions[currentQuestionIndex].question; // tutor support from Oisin on how to target the question property of MyQuestions array using the currentQuestionIndex
+    console.log(myQuestions[currentQuestionIndex].question); // check printout of questions
+    for (let i = 0; i < answersClass.length; i++) {
+        answersClass[i].innerText = (myQuestions[currentQuestionIndex].answers["answer" + (i + 1)]); // tutor support from Jason on how to target answer choices
+        console.log((myQuestions[currentQuestionIndex].answers["answer" + (i + 1)])); // check printout of answers
+        answersClass[i].addEventListener("click", checkAnswer)
     };
-    answerButtons.addEventListener("click", checkAnswer)
     currentQuestionIndex++;
 }
 
-function setNextQuestion() {
-    displayQuestion(shuffleQuestions[currentQuestion]);
-}
-
 function checkAnswer() {
-
+    // tutor support from Sean to use this.id
+    if (this.id === myQuestions[currentQuestionIndex].correctAnswer) {
+        alert("Correct!")
+        incrementScore();
+    } else {
+        alert("Incorrect!");
+    };
+    console.log(myQuestions[currentQuestionIndex].correctAnswer); // check 
+    setNextQuestion();
 }
 
 function incrementScore() {
-
+    let previousScore = parseInt(document.getElementById("s-number").innerText);
+    document.getElementById("s-number").innerText = ++previousScore;
 }
 
 startQuiz();
