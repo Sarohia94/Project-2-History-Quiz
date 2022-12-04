@@ -15,7 +15,7 @@ const myQuestions = [{
             answer3: "1918",
             answer4: "1939"
         },
-        correctAnswer: "answer1"
+        correctAnswer: "answer2"
     },
     {
         question: "Who was the British Prime Minister during the Falklands War?",
@@ -116,7 +116,7 @@ let currentQuestion;
 
 function startQuiz() {
     shuffleQuestions = myQuestions.sort(() => Math.random() - 0.5); // tutor support from Gemma to sort the error messages showing in dev tools
-    console.log("shuffleQuestions", shuffleQuestions); // check if the printout shuffles the array
+    // console.log("shuffleQuestions", shuffleQuestions); // check if the printout shuffles the array
     currentQuestion = 0;
     setNextQuestion();
 }
@@ -125,29 +125,30 @@ function setNextQuestion() {
     displayQuestion(shuffleQuestions[currentQuestion]);
     let previousQuestion = parseInt(document.getElementById("q-number").innerText);
     document.getElementById("q-number").innerText = ++previousQuestion;
-    console.log(previousQuestion); // check
+    // console.log(previousQuestion); // check
 }
 
 function displayQuestion() {
     question.innerText = myQuestions[currentQuestionIndex].question; // tutor support from Oisin on how to target the question property of MyQuestions array using the currentQuestionIndex
-    console.log(myQuestions[currentQuestionIndex].question); // check printout of questions
+    // console.log(myQuestions[currentQuestionIndex].question); // check printout of questions
     for (let i = 0; i < answersClass.length; i++) {
         answersClass[i].innerText = (myQuestions[currentQuestionIndex].answers["answer" + (i + 1)]); // tutor support from Jason on how to target answer choices
-        console.log((myQuestions[currentQuestionIndex].answers["answer" + (i + 1)])); // check printout of answers
+        // console.log((myQuestions[currentQuestionIndex].answers["answer" + (i + 1)])); // check printout of answers
         answersClass[i].addEventListener("click", checkAnswer)
     };
-    currentQuestionIndex++;
 }
 
 function checkAnswer() {
     // tutor support from Sean to use this.id
-    if (this.id === myQuestions[currentQuestionIndex].correctAnswer) {
+    // console.log(this.id);
+    // console.log(myQuestions[currentQuestionIndex].correctAnswer);
+    if (this.id == myQuestions[currentQuestionIndex].correctAnswer) {
         alert("Correct!")
         incrementScore();
     } else {
         alert("Incorrect!");
     };
-    console.log(myQuestions[currentQuestionIndex].correctAnswer); // check 
+    currentQuestionIndex++ // tutor support from Joshua to move currentQuestionIndex++ as checkanswer not working
     setNextQuestion();
 }
 
