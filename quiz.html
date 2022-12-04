@@ -27,11 +27,12 @@
     <a href="index.html">
         <h1>History Quiz</h1>
     </a>
+    <small id="quiz-type">Modern Warfare</small>
 
-    <div class="quiz-area">
-        <div class="counter-area">
-            <p class="question-count">Question:<span id="q-number">0</span></p>
-            <p class="score-count"><span id="s-number">0</span></p>
+    <div id="quiz-area" class="hide">
+        <div id="counter-area">
+            <p id="question-count">Question:<span id="q-number">0</span></p>
+            <p id="score-count"><span id="s-number">0</span></p>
         </div>
 
         <h2 id="question"></h2>
@@ -41,7 +42,22 @@
             <button class="quiz-btn answers" id="answer2"></button>
             <button class="quiz-btn answers" id="answer3"></button>
             <button class="quiz-btn answers" id="answer4"></button>
-        </div>
+        </div> 
+    </div>
+
+    <!--End score and finish quiz -->
+    <div id="end-area" class="hide">
+        <h2>Your score is: <span id="end-score"></span></h2>
+        <p>Thank you for taking part and testing your knowledge!</p>
+        <p>Submit your score by entering your name:<p>
+            <form>
+                <input type="text" id="name" placeholder="Your Name">
+                <button class="btn" type="submit" id="submit-score">Submit</button>
+            </form>
+            <div>
+                <a href="quiz.html" class="btn">Go Again!</a>
+                <a href="index.html" class="btn">Home</a>
+            </div>
     </div>
 
     <!-- Javascript-->

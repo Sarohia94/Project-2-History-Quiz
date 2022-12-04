@@ -40,10 +40,10 @@ h1 {
 
 h2 {
     font-weight: 600;
-    font-size: 36px;
+    font-size: 18px;
     color: #114411;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 a {
@@ -53,7 +53,7 @@ a {
 #quiz-type {
     color: #78290f;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 /* start game and scoreboard buttons */
@@ -68,8 +68,8 @@ a {
 }
 
 .btn {
-    font-size: 36px;
-    width: 100%;
+    font-size: 18px;
+    width: auto;
     padding: 15px;
     border-radius: 12px;
     color: #114411;
@@ -85,7 +85,7 @@ a {
 }
 
 /* quiz area */
-.quiz-area {
+#quiz-area {
     border-radius: 12px;
     background-color: rgb(182, 190, 191, 0.8);
     width: 80%;
@@ -94,18 +94,18 @@ a {
     padding: 30px;
 }
 
-.counter-area {
+#counter-area {
     display: flex;
     justify-content: space-between;
 }
 
-.question-count, .score-area {
-    padding-bottom: 15px;
+
+#question-count, #score-count {
     font-size: 18px;
 }
 
 .quiz-btn {
-    font-size: 24px;
+    font-size: 18px;
     width: 90%;
     padding: 10px;
     border-radius: 12px;
@@ -119,4 +119,26 @@ a {
 .quiz-btn:hover {
     background-color: #114411;
     color: #f3f3f4;
+}
+
+.hide {
+    display: none;
+}
+
+/* end quiz area */
+#end-area {
+    border-radius: 12px;
+    background-color: rgb(182, 190, 191, 0.8);
+    width: 80%;
+    margin: 0 auto;
+    color: #114411;
+    padding: 30px;
+}
+
+#name {
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 12px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }

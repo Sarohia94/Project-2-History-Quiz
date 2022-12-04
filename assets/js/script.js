@@ -1,8 +1,8 @@
-//Counter area for question and score number
+// Counter area for question and score number
 let questionNo = 0;
 let scoreNo = 0;
 
-//Quiz area
+// Quiz area
 const question = document.getElementById("question")
 const answersClass = document.getElementsByClassName("answers")
 
@@ -82,7 +82,7 @@ const myQuestions = [{
         answers: {
             answer1: "African Americans",
             answer2: "Women",
-            answer3: "World War 1 veterans",
+            answer3: "WW1 Veterans",
             answer4: "Youths under age 18"
         },
         correctAnswer: "answer1"
@@ -110,11 +110,12 @@ const myQuestions = [{
 ];
 let currentQuestionIndex = 0;
 
-//Shuffle variables - https://www.youtube.com/watch?v=riDzcEQbX6k
+// Shuffle variables - https://www.youtube.com/watch?v=riDzcEQbX6k
 let shuffleQuestions;
 let currentQuestion;
 
 function startQuiz() {
+    document.getElementById("quiz-area").classList.remove("hide");
     shuffleQuestions = myQuestions.sort(() => Math.random() - 0.5); // tutor support from Gemma to sort the error messages showing in dev tools
     // console.log("shuffleQuestions", shuffleQuestions); // check if the printout shuffles the array
     currentQuestion = 0;
@@ -122,7 +123,12 @@ function startQuiz() {
 }
 
 function setNextQuestion() {
-    displayQuestion(shuffleQuestions[currentQuestion]);
+    if (currentQuestionIndex <= 9) {
+        displayQuestion(shuffleQuestions[currentQuestion]);   
+    } else {
+        document.getElementById("quiz-area").classList.add("hide");
+        document.getElementById("end-area").classList.remove("hide");
+    }
     let previousQuestion = parseInt(document.getElementById("q-number").innerText);
     document.getElementById("q-number").innerText = ++previousQuestion;
     // console.log(previousQuestion); // check
