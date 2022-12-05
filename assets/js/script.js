@@ -6,6 +6,9 @@ let scoreNo = 0;
 const question = document.getElementById("question")
 const answersClass = document.getElementsByClassName("answers")
 
+// End area
+const endScore = document.getElementById("end-score")
+
 // Questions array
 const myQuestions = [{
         question: "What year did WW1 start?",
@@ -128,6 +131,7 @@ function setNextQuestion() {
     } else {
         document.getElementById("quiz-area").classList.add("hide");
         document.getElementById("end-area").classList.remove("hide");
+        endScore.innerText = `${scoreNo}`;
     }
     let previousQuestion = parseInt(document.getElementById("q-number").innerText);
     document.getElementById("q-number").innerText = ++previousQuestion;
@@ -159,8 +163,7 @@ function checkAnswer() {
 }
 
 function incrementScore() {
-    let previousScore = parseInt(document.getElementById("s-number").innerText);
-    document.getElementById("s-number").innerText = ++previousScore;
+    scoreNo++;
 }
 
 startQuiz();
