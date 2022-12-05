@@ -11,6 +11,9 @@ const endScore = document.getElementById("end-score")
 const yourName = document.getElementById("name")
 const submitScore = document.getElementById("submit")
 
+// scoreboard area
+const highScoresList = document.getElementById("scores-list")
+
 // Questions array
 const myQuestions = [{
         question: "What year did WW1 start?",
@@ -172,7 +175,38 @@ function incrementScore() {
 
 startQuiz();
 
-// save scores https://www.youtube.com/watch?v=DFhmNLKwwGw&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=10
+// Save scores https://www.youtube.com/watch?v=DFhmNLKwwGw&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=10
 function saveScore(e) {
-    
+    // prevent form opening on a new page
+    e.preventDefault();
+    // log object to hold name & high score
+    const log = {
+        name: yourName.value,
+        score: scoreNo
+    };
+    // push log object into high scores list
+    highScores.push(log);
+    // sorts score by value
+    highScores((a, b) => b.score - a.score);
+    // sets high score list as 5
+    highScores.splice(5);
+    // update high score in local storage
+    localStorage.setItem("highScores", JSON.stringify(highScores));
+    // opens the scoreboard.html
+    window.location.assign("scoreboard.html")
 }
+
+// retrieve high scores list or an empty array
+const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+
+// add event listener when adding name to submit score. Where there is no name the submit button is disabled.
+yourName.addEventListener("keyup", () => {submitScore.disabled = !yourName.value;});
+
+// add event listener on submit score to call the save score function
+submitScore.addEventListener("click", saveScore);
+
+// add to the scoreboard area
+// https://www.youtube.com/watch?v=jfOv18lCMmw&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=10
+highScoresList.innerHTML = highScores.map(highScores => { 
+    return `<li class="highscoreitem">${highScores.name}: ${highScores.score}</li>`;
+}).join("");

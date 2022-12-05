@@ -142,3 +142,19 @@ a {
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+/* scoreboard */
+#scoreboard-area {
+    border-radius: 12px;
+    background-color: rgb(182, 190, 191, 0.8);
+    width: 80%;
+    margin: 0 auto;
+    color: #114411;
+    padding: 30px;
+}
+
+#scores-list {
+    list-style: none;
+    font-size: 18px;
+    padding: 30px;
+}
