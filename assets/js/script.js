@@ -8,6 +8,8 @@ const answersClass = document.getElementsByClassName("answers")
 
 // End area
 const endScore = document.getElementById("end-score")
+const yourName = document.getElementById("name")
+const submitScore = document.getElementById("submit")
 
 // Questions array
 const myQuestions = [{
@@ -131,7 +133,7 @@ function setNextQuestion() {
     } else {
         document.getElementById("quiz-area").classList.add("hide");
         document.getElementById("end-area").classList.remove("hide");
-        endScore.innerText = `${scoreNo}`;
+        endScore.innerText = `${scoreNo}/10`;
     }
     let previousQuestion = parseInt(document.getElementById("q-number").innerText);
     document.getElementById("q-number").innerText = ++previousQuestion;
@@ -169,3 +171,8 @@ function incrementScore() {
 }
 
 startQuiz();
+
+// save scores https://www.youtube.com/watch?v=DFhmNLKwwGw&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=10
+function saveScore(e) {
+    
+}
