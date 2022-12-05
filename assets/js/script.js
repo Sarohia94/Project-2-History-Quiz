@@ -164,6 +164,8 @@ function checkAnswer() {
 
 function incrementScore() {
     scoreNo++;
+    let previousScore = parseInt(document.getElementById("s-number").innerText);
+    document.getElementById("s-number").innerText = ++previousScore;
 }
 
 startQuiz();
