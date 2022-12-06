@@ -9,9 +9,6 @@ const answersClass = document.getElementsByClassName("answers")
 const endScore = document.getElementById("end-score")
 const yourName = document.getElementById("name")
 const submitScore = document.getElementById("submit-score")
-
-// scoreboard area
-const highScoresList = document.getElementById("scores-list")
 const MAX_HIGH_SCORES = 5;
 
 // Questions array
@@ -182,7 +179,6 @@ startQuiz();
 // console.log("start funct called");
 
 // Save scores - https://www.youtube.com/watch?v=DFhmNLKwwGw&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=10
-
 function saveScore(e) {
     // prevent form posting on a new page
     e.preventDefault();
@@ -194,13 +190,10 @@ function saveScore(e) {
     console.log(log);
     // push log object into high scores list
     highScores.push(log);
-    console.log(highScores);
     // sorts score by value
     highScores.sort((a, b) => b.score - a.score);
-    console.log(highScores);
     // sets high score list as 5
     highScores.splice(5);
-    console.log(highScores);
     // update high score in local storage
     localStorage.setItem("highScores", JSON.stringify(highScores));
     // opens the scoreboard.html
@@ -217,9 +210,3 @@ yourName.addEventListener("keyup", () => {
 
 // add event listener on submit score to call the save score function
 submitScore.addEventListener("click", saveScore);
-
-// add to the scoreboard area
-// https://www.youtube.com/watch?v=jfOv18lCMmw&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=10
-highScoresList.innerHTML = highScores.map(highScores => { 
-    return `<li class="highscoreitem">${highScores.name}: ${highScores.score}</li>`;
-}).join("");
