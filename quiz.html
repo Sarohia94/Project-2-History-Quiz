@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
      <!--Meta tags-->
     <meta charset="UTF-8">
@@ -22,46 +23,62 @@
     <title>History Quiz</title>
 </head>
 
-<!-- Home page -->
 <body class="image">
+
+    <!-- Quiz name -->
     <a href="index.html">
         <h1>History Quiz</h1>
     </a>
     <small id="quiz-type">Modern Warfare</small>
-
+    
+    <!-- Quiz area -->
     <div id="quiz-area" class="hide">
+
+        <!-- Counter area that displays question no. and score count -->
         <div id="counter-area">
             <p id="question-count">Question: <span id="q-number">0</span></p>
             <p id="score-count">Score: <span id="s-number">0</span></p>
         </div>
 
+        <!-- Displays question -->
         <h2 id="question"></h2>
-
+    
+        <!-- Answer choices -->
         <div>
             <button class="quiz-btn answers" id="answer1"></button>
             <button class="quiz-btn answers" id="answer2"></button>
             <button class="quiz-btn answers" id="answer3"></button>
             <button class="quiz-btn answers" id="answer4"></button>
         </div> 
+
     </div>
 
-    <!--End score and finish quiz -->
+    <!--End score area which displays once quiz is complete -->
     <div id="end-area" class="hide">
+
+        <!-- Total score display and message -->
         <h2>Your score is: <span id="end-score"></span></h2>
         <p>Thank you for taking part and testing your knowledge!</p>
         <p>Submit your score by entering your name:<p>
+
+            <!-- Form to enter name and then submit score to scoreboard.html -->
             <form>
                 <input type="text" id="name" placeholder="Your Name">
                 <button class="btn" type="submit" id="submit-score" disabled>Submit</button>
             </form>
+
+            <!-- Buttons to play again or return to home -->
             <div>
                 <a href="quiz.html" class="btn">Go Again!</a>
                 <a href="index.html" class="btn">Home</a>
             </div>
+
     </div>
 
     <!-- Javascript-->
     <script type="module" src="assets/js/questions.js"></script>
     <script type="module" src="assets/js/script.js"></script>
+
 </body>
+
 </html>
