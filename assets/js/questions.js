@@ -1,4 +1,4 @@
-// Questions array
+// Questions array which is exported to script.js
 export const myQuestions = [{
     question: "What year did WW1 start?",
     answers: {
