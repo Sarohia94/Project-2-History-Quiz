@@ -84,6 +84,12 @@ a {
     color: white;
 }
 
+.btn[disabled]:hover {
+    background-color: white;
+    color: #114411;
+    cursor: not-allowed;
+}
+
 /* quiz area */
 #quiz-area {
     border-radius: 12px;
@@ -125,6 +131,25 @@ a {
     display: none;
 }
 
+.correct {
+    background-color: green;
+    color: #f3f3f4;
+}
+
+.correct:hover {
+    background-color: green;
+    color: #f3f3f4;
+}
+
+.incorrect {
+    background-color: red;
+    color: #f3f3f4;
+}
+
+.incorrect:hover {
+    background-color: red;
+    color: #f3f3f4;
+}
 /* end quiz area */
 #end-area {
     border-radius: 12px;

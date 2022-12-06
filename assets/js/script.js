@@ -12,6 +12,7 @@ const submitScore = document.getElementById("submit-score")
 
 // scoreboard area
 const highScoresList = document.getElementById("scores-list")
+const MAX_HIGH_SCORES = 5;
 
 // Questions array
 const myQuestions = [{
@@ -158,13 +159,17 @@ function checkAnswer() {
     // console.log(this.id);
     // console.log(myQuestions[currentQuestionIndex].correctAnswer);
     if (this.id == myQuestions[currentQuestionIndex].correctAnswer) {
-        alert("Correct!")
+        this.classList.add("correct");
         incrementScore();
     } else {
-        alert("Incorrect!");
+        this.classList.add("incorrect");
     };
     currentQuestionIndex++ // tutor support from Joshua to move currentQuestionIndex++ as checkanswer not working
-    setNextQuestion();
+    setTimeout(() => {
+        this.classList.remove("correct")
+        this.classList.remove("incorrect")
+        setNextQuestion()
+    }, 1000);
 }
 
 function incrementScore() {
@@ -186,12 +191,16 @@ function saveScore(e) {
         name: yourName.value,
         score: scoreNo
     };
+    console.log(log);
     // push log object into high scores list
     highScores.push(log);
+    console.log(highScores);
     // sorts score by value
     highScores.sort((a, b) => b.score - a.score);
+    console.log(highScores);
     // sets high score list as 5
     highScores.splice(5);
+    console.log(highScores);
     // update high score in local storage
     localStorage.setItem("highScores", JSON.stringify(highScores));
     // opens the scoreboard.html
