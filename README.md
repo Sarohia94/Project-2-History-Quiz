@@ -129,17 +129,23 @@ The webiste is responsive on a range of device sizes and have:
 * Home page
   * The home page has a brief introductory message before providing two buttons to either start the quiz or view the scoreboard.
 
-  ![Home page on different screen sizes](docs/features/feature3.png)
+    ![Home page on different screen sizes](docs/features/feature3.png)
 
   * The buttons change color when hovered over to bring them to attention to the user.
 
-  ![Home page buttons showing interactivity](docs/features/feature4.gif)
+    ![Home page buttons showing interactivity](docs/features/feature4.gif)
 
 * Quiz page
-  * 
-  * 
-  * 
-  * 
+  * The quiz page shows the question number, score count, question and four answer choices. 
+
+    ![Quiz page on different screen sizes](docs/features/feature5.png)
+
+  * The answer buttons are interactive. They change colour as you hover over them. They also change colour when answered correctly or incorrectly. 
+  If the user answers correctly the colour changes to green for a second before moving on to the next question. The question number and score will increment by 1. 
+  If the user answers incorrectly the colour changes to red for a second before moving on to the next question. The question number will increment by 1 whereas the score count will remain unchanged.
+
+   ![Quiz page buttons showing interactivity](docs/features/feature6.gif)
+  
 * Submit score page
   * 
   * 
