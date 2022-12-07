@@ -328,7 +328,5 @@ The website was deployed to GitHub Pages as follows:
 ### Acknowledgements 
 Thank you to anyone taking the time to view my first quiz and second project. Special thanks to the Slack community and the below individuals:
 * [Chris Quinn](https://github.com/10xOXR), my mentor. Thank you for your guidance and feedback.
-* 
-* 
-* 
+* To the tutors from tutor support for their help and assistance: Sean, Oisin, Jason, Joshua and John.
 * [Gemma Sayers](https://github.com/GJSayers) for her assistance on Slack.
