@@ -1,108 +1,316 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# History Quiz - Modern Warfare
 
-Welcome Sarohia94,
+This history quiz is designed to test your knowledge on trivia related to modern warfare. The purpose of the site is to see how your knowledge in modern warfare measures up with a short quiz which covers the period from the end of the 19th century to present day.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+The home page directs you start the quiz or view the scoreboard where the top 5 high scorers are ranked. The quiz consists of 10 multiple choice questions. Upon completion you receive a total score and an option to submit your score by entering your name.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+![Website shown on a range of devices](docs/amiresponsive.png)
 
-## Gitpod Reminders
+[View quiz on Github Pages](https://sarohia94.github.io/Project-1-skinfirst/)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+* [User Experience (UX)](#User-Experience-(UX))
+  * [Initial Discussion](#Initial-Discussion)
+  * [User Stories](#User-Stories)
 
-`python3 -m http.server`
+* [Design](#Design)
+  * [Colour Scheme](#Colour-Scheme)
+  * [Typography](#Typography)
+  * [Imagery](#Imagery)
+  * [Wireframes](#Wireframes)
+  * [Features](#Features)
+  * [Accessibility](#Accessibility)
 
-A blue button should appear to click: _Make Public_,
+* [Technologies Used](#Technologies-Used)
+  * [Languages Used](#Languages-Used)
+  * [Frameworks, Libraries & Programs Used](#Frameworks,-Libraries-&-Programs-Used)
 
-Another blue button should appear to click: _Open Browser_.
+* [Testing](#Testing)
+  * [W3C Validator](#W3C-Validator)
+  * [Solved Bugs](#Solved-Bugs)
+  * [Known Bugs](#Known-Bugs)
+  * [Testing User Stories](#Testing-User-Stories)
+  * [Lighthouse](#Lighthouse)
+  * [Manual Testing](#Manual-Testing)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+  * [Deployment](#Deployment)
+    * [Local Deployment](#Local-Deployment)
+    * [Remote Deployment](#Remote-Deployment)
+  
+* [Credits](#Credits)
+  * [Code](#Code)
+  * [Content](#Content)
+  * [Media](#Media)
+  * [Acknowledgments](#Acknowledgments)
 
-A blue button should appear to click: _Make Public_,
+- - -
 
-Another blue button should appear to click: _Open Browser_.
+## User Experience (UX)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Initial Discussion
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+#### Key information for the site:
 
-------
+* 
+* 
+* 
+* 
+* 
 
-## Release History
+### User Stories
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+#### Client Goals
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+* To make it responsive so that users are able to view the site on a range of device sizes.
+* To make it easy for users to interact with the website intuitively.
+* To make it available to use any time and any where
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+#### First Time Visitor Goals
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+* I want to understand the purpose of the site and what is being quized.
+* I want to be able to navigate the site easily to take the quiz.
+* I want to be able to test my history knowledge in modern warfare.
+* I want to be given the option to submit my score to the scoreboard.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+#### Returning Visitor Goals
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+* I want to be able to retake the quiz to see if I have improved from the first time.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+#### Frequent Visitor Goals
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+* I want to be able to log my high score to the scoreboard.
+* I want to be able to take longer quizes or quizes with increasing difficulty to test my knowledge.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+- - -
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+## Design
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Colour Scheme
+This was obtained from the [Coolors](https://coolors.co/) website.
+![Colour palette for the website](docs/colourpalette.png)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Typography
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+Google Fonts were used as below:
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+* Rubik Distressed is used for the headings. 
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+* Noto Serif Khojki is used for the body of the text. It is a sans-serif font.
 
-------
+### Imagery
 
-## FAQ about the uptime script
+One image was used for the background which set the theme of the website. Image of the sky with war planes was taken from the [War History Online](https://www.warhistoryonline.com/wp-content/uploads/sites/64/2018/08/no-15-squadron-raf-stirlings-mk-i-and-hurricane-escorts-1.jpg) website and can be found in the credits section.
 
-**Why have you added this script?**
+### Wireframes
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+Wireframes were created for destop/tablet and mobile.
 
-**How will this affect me?**
+* Home page wireframe can be found here for [desktop/tablet](docs/wireframes/) and here for [mobile](docs/wireframes/).
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+* Quiz page wireframe can be found here for [desktop/tablet](docs/wireframes/guidedesktop.png) and here for [mobile](docs/wireframes/guidemobile.png).
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+* Submit score page wireframe can be found here for [desktop/tablet](docs/wireframes/) and here for [mobile](docs/wireframes/).
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+* Scoreboard page wireframe can be found here for [desktop/tablet](docs/wireframes/) and here for [mobile](docs/wireframes/).
 
-**So….?**
+### Features
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+* Responsive on a range of device sizes
+* All pages on the website have:
+  * 
+  * 
+* Home page
+  * 
+  * 
+* Quiz page
+  * 
+  * 
+  * 
+  * 
+* Submit score page
+  * 
+  * 
+  * 
+* Scoreboard page
+  * 
+  * 
+* 404 Error page
+  * 
+  * 
+* Future features
+  * 
+  * 
+  * 
+  
+### Accessibility 
+The website achieves accessibility with:
+* Semantic HTML
+* Colour contrast, checked and sufficient
+* Hover state on all buttons
+* Using appropriate font
 
-**Can I opt out?**
+- - -
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+## Technologies Used
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+### Languages Used
+* HTML
+* CSS
+* Javascript
 
-**Anything more?**
+### Frameworks, Libraries & Programs Used
+* Git - for version control. Using GitPod terminal to commit to Git and push to GitHub.
+* GitHub - to save and store the code pushed from Git.
+* Balsamic - to create the wireframes when designing the website.
+* [Google Fonts](https://fonts.google.com/) - to import font to apply on the website.
+* Dev Tools - for testing and troubleshooting.
+* [Am I responsive?](https://ui.dev/amiresponsive) - to show website across a range of devices.
+* [Wave](https://wave.webaim.org/) - to test web accessibility.
+* [W3C](https://validator.w3.org/) - HTML validator.
+* [Jigsaw](https://jigsaw.w3.org/css-validator/) - CSS validator.
+* Hover.css - to make the nav bar, footer links and the sign up button interactive.
+* [Tiny PNG](https://tinypng.com/) - to compress images.
+* [Responsive design checker](https://responsivedesignchecker.com/) - to check responsive design for a variety of screen sizes.
+* [Favicon.io](https://favicon.io/favicon-generator/) - to creat favicon icon for the website.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+- - -
 
----
+## Testing 
+Issues raised in my mid project meeting with my mentor:
+  1. ![Issue with ](docs/testing/issues/)
+  2. 
+  3. Mentor [Chris Quinn](https://github.com/10xOXR) 
+Issues faced before submitting my project for review on Slack:
+  1. 
+Issues raised as part of feedback from the peer code review on slack:
+  1. 
+  2. 
+  3. 
+Final issues raised following the end project meeting with my mentor:
+  1. 
+  2. 
+  3. 
 
-Happy coding!
+### W3C Validator 
+No issues with the HTML pages or CSS:
+* [index.html](docs/testing/w3c/)
+* [quiz.html](docs/testing/w3c/)
+* [scoreboard.html](docs/testing/w3c/)
+* [404.html](docs/testing/w3c/)
+* [style.css](docs/testing/w3c/)
+
+### JSHint Validator
+No issues with the Javascript pages:
+* [script.js](docs/testing/jshint/)
+* [questions.js](docs/testing/jshint/)
+* [highscores.js](docs/testing/jshint/) 
+
+### Solved Bugs
+Issues faced and resolved before my mid project meeting:
+  1. 
+  2. 
+  ![Issue ](docs/testing/issues/)
+  3. 
+  4. 
+  5. 
+
+### Known Bugs
+  1. 
+
+### Testing User Stories
+* First Time Visitors
+  * 
+  [Home page ](docs/testing/userstories/)
+  * 
+  * 
+  * 
+  
+* Returning Visitors
+  * 
+  * 
+
+* Frequent Visitor Goals
+  * 
+
+### Lighthouse
+* Index page testing for mobile
+![Index page testing for mobile](docs/testing/lighthouse/)
+* Index page testing for desktop
+![Index page testing for desktop](docs/testing/lighthouse/)
+* Quiz page testing for mobile
+![Quiz page testing for mobile](docs/testing/lighthouse/)
+* Quiz page testing for desktop
+![Quiz page testing for desktop](docs/testing/lighthouse/)
+* Scoreboard page testing for mobile
+![Scoreboard page testing for mobile](docs/testing/lighthouse/)
+* Scoreboard page testing for desktop
+![Scoreboard page testing for desktop](docs/testing/lighthouse/)
+* 404 page testing for mobile
+![404 page testing for mobile](docs/testing/lighthouse/)
+* 404 page testing for desktop
+![404 page testing for desktop](docs/testing/lighthouse/)
+
+### Manual Testing
+* Tested responsiveness with the different dimensions in dev tools and via [Responsive design checker](https://responsivedesignchecker.com/).
+* Tested website on mobile with [Chrome](docs/testing/manualtesting/) & [Samsung internet](docs/testing/manualtesting/)
+* Tested on tablet with [Amazon Silk browser](docs/testing/manualtesting/), laptop with [Microsoft Edge](docs/testing/manualtesting/) and desktop with [Microsoft Edge](docs/testing/manualtesting/).
+* Tested via peer review on ...
+* Tested all hyperlinks 
+* Tested submit score form. Name left blank will disable the submit button.
+* Tested Scoreboard page, top 5 scores are logged in number order.
+
+- - -
+
+## Deployment 
+
+### Local Deployment
+
+#### How to Clone
+1. Sign up or log in to GitHub
+2. Go to the repository https://github.com/Sarohia94/Project-1-skinfirst 
+3. Go to the code dropdown and select how you'd like clone and copy the link provided
+4. Go to the new repo and enter in your workspace terminal, "git clone" followed by the link copied
+
+#### How to Fork
+1. Sign up or log in to GitHub
+2. Go to the repository https://github.com/Sarohia94/Project-1-skinfirst 
+3. Click on the fork button towards the top right of the page 
+
+### Remote Deployment
+The website was deployed to GitHub Pages as follows:
+1. Log in to GitHub
+2. Assuming you have cloned or forked the repository, go on the "Settings" link for this repository
+3. Click on the "Pages" link on the left hand side of the page
+4. Under "Source" select "Deploy from branch" from the dropdown
+5. Under "Branch" select "main" from the dropdown
+6. Click "Save" which will then refresh the page
+7. It might take a few mins before you can refresh and view the link to the site published
+
+- - -
+
+## Credits
+
+### Code
+* 
+* 
+* 
+* Favicon icon and link tags code from [Favicon.io](https://favicon.io/favicon-generator/) website.
+
+### Content
+* The content was written by the developer Amritpreet Sarohia.
+* 
+* 
+* 
+* 
+
+### Media
+[War History Online](https://www.warhistoryonline.com/wp-content/uploads/sites/64/2018/08/no-15-squadron-raf-stirlings-mk-i-and-hurricane-escorts-1.jpg) website. 
+
+### Acknowledgements 
+Thank you to anyone taking the time to view my first quiz and second project. Special thanks to the Slack community and the below individuals:
+* [Chris Quinn](https://github.com/10xOXR), my mentor. Thank you for your guidance and feedback.
+* 
+* 
+* 
+* [Gemma Sayers](https://github.com/GJSayers) for her assistance on Slack.
