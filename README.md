@@ -116,10 +116,14 @@ Wireframes were created for destop/tablet and mobile.
 
 ### Features
 
-* Responsive on a range of device sizes
-* All pages on the website have:
-  * 
-  * 
+Wesite consists of a home page, a quiz page, a scoreboard page and a 404 error page.
+The webiste is responsive on a range of device sizes and have:
+* A favicon implemented in the browser tab 
+  
+  ![Favicon feature](docs/features/feature1.png)
+  
+* 
+
 * Home page
   * 
   * 
