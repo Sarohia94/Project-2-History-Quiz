@@ -252,10 +252,10 @@ Issues faced and resolved before my mid project meeting:
   * 
 
 ### Lighthouse
-* Index page testing for mobile
-![Index page testing for mobile](docs/testing/lighthouse/)
-* Index page testing for desktop
-![Index page testing for desktop](docs/testing/lighthouse/)
+* Home page testing for mobile
+![Home page testing for mobile](docs/testing/lighthouse/)
+* Home page testing for desktop
+![Home page testing for desktop](docs/testing/lighthouse/)
 * Quiz page testing for mobile
 ![Quiz page testing for mobile](docs/testing/lighthouse/)
 * Quiz page testing for desktop
