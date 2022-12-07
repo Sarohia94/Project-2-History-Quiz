@@ -6,7 +6,7 @@ The home page directs you start the quiz or view the scoreboard where the top 5 
 
 ![Website shown on a range of devices](docs/amiresponsive.png)
 
-[View quiz on Github Pages](https://sarohia94.github.io/Project-1-skinfirst/)
+[View quiz on Github Pages](https://sarohia94.github.io/Project-2-History-Quiz/)
 
 * [User Experience (UX)](#User-Experience-(UX))
   * [Initial Discussion](#Initial-Discussion)
