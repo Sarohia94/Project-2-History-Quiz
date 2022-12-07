@@ -169,7 +169,6 @@ a {
 form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -203,3 +202,8 @@ form {
     margin-bottom: 15px;
     padding-bottom: 15px;
 }
+
+/* Media queries */
+
+/* Tablets */
+@media only screen and (min-width : 575px)
