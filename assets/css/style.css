@@ -203,7 +203,70 @@ form {
     padding-bottom: 15px;
 }
 
-/* Media queries */
+/* Media queries - for tablets screens and larger  */
+@media only screen and (min-width : 575px) {
+    h2 {
+        font-weight: 600;
+        font-size: 24px;
+        color: #114411;
+        margin: 30px;
+    }
 
-/* Tablets */
-@media only screen and (min-width : 575px)
+    #quiz-type {
+        color: #78290f;
+        font-weight: 600;
+        font-size: 30px;
+    }
+
+    #start-quiz, #scoreboard {
+        margin: 30px;
+    }
+
+    .btn {
+        font-size: 24px;
+        padding: 30px;
+        margin: 30px;
+        border-radius: 12px;
+        color: #114411;
+        background-color: rgb(182, 190, 191, 0.5);
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        transition: all 0.5s;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #question-count, #score-count {
+        font-size: 24px;
+    }
+
+    .quiz-btn {
+        font-size: 24px;
+        width: 90%;
+        padding: 20px;
+        border-radius: 12px;
+        color: #114411;
+        background-color: #f3f3f4;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        transition: all 0.5s;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    #name {
+        font-size: 24px;
+        padding: 30px;
+        border-radius: 12px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    #scores-list {
+        list-style: none;
+        font-size: 24px;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+    }
+}
