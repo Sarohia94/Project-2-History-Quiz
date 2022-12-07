@@ -62,7 +62,7 @@ A multiple choice quiz to test knowlege on modern warfare history.
 
 * To make it responsive so that users are able to view the site on a range of device sizes.
 * To make it easy for users to interact with the website intuitively.
-* To make it available to use any time and any where
+* To make it available to use any time and any where.
 
 #### First Time Visitor Goals
 
