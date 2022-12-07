@@ -47,16 +47,14 @@ The home page directs you to start the quiz or view the scoreboard where the top
 ## User Experience (UX)
 
 ### Initial Discussion
-
-
+A multiple choice quiz to test knowlege on modern warfare history.
 
 #### Key information for the site:
 
-* 
-* 
-* 
-* 
-* 
+* What is being tested
+* A 10 question, multiple choice quiz
+* A scoreboard which ranks the top 5 high scorers
+* On completing the quiz, an option to submit your name and score 
 
 ### User Stories
 
@@ -68,18 +66,20 @@ The home page directs you to start the quiz or view the scoreboard where the top
 
 #### First Time Visitor Goals
 
-* I want to understand the purpose of the site and what is being quized.
-* I want to be able to navigate the site easily to take the quiz.
-* I want to be able to test my history knowledge in modern warfare.
-* I want to be given the option to submit my score to the scoreboard.
+* I want to understand the purpose of the site and what is being quized before I start.
+* I want to be able to navigate the site easily so that I can take the quiz.
+* I want to test my history knowledge in modern warfare to see how well I perform.
+* I want to be given instant feedback as I pick the correct or incorrect answers.
+* I want to be given my final score on completion so that I know how I perfomed.
 
 #### Returning Visitor Goals
 
 * I want to be able to retake the quiz to see if I have improved from the first time.
+* I want to be able to submit my name and score, so that this might be logged on the scoreboard.
+* I want to be able to view the scoreboard to see the top 5 scorers name and score.
 
 #### Frequent Visitor Goals
 
-* I want to be able to log my high score to the scoreboard.
 * I want to be able to take longer quizes or quizes with increasing difficulty to test my knowledge.
 
 - - -
