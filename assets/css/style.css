@@ -51,6 +51,12 @@ a {
     text-decoration: none;
 }
 
+/* Paragraphs */
+p {
+    font-size: 18px;
+    color: #78290f;
+}
+
 /* Modern Warfare subtitle */
 #quiz-type {
     color: #78290f;
