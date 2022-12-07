@@ -104,7 +104,7 @@ One image was used for the background, which set the theme of the website. Image
 
 ### Wireframes
 
-Wireframes were created for destop/tablet and mobile.
+Wireframes were created for destop, tablet and mobile.
 
 * Home page wireframe can be found for [desktop](docs/wireframes/desktop-home.png), [tablet](docs/wireframes/tablet-home.png) and [mobile](docs/wireframes/mobile-home.png).
 
@@ -122,7 +122,9 @@ The webiste is responsive on a range of device sizes and have:
   
   ![Favicon feature](docs/features/feature1.png)
   
-* 
+* The title and subtitle at the top of every page. Where the title is a clickable link back to the home page.
+
+  ![Favicon feature](docs/features/feature2.png)
 
 * Home page
   * 
