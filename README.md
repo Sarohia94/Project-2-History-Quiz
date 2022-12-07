@@ -253,21 +253,21 @@ Issues faced and resolved before my mid project meeting:
 
 ### Lighthouse
 * Home page testing for mobile
-![Home page testing for mobile](docs/testing/lighthouse/)
+![Home page testing for mobile](docs/testing/lighthouse/lighthouse-mobile-home.png)
 * Home page testing for desktop
-![Home page testing for desktop](docs/testing/lighthouse/)
+![Home page testing for desktop](docs/testing/lighthouse/lighthouse-desktop-home.png)
 * Quiz page testing for mobile
-![Quiz page testing for mobile](docs/testing/lighthouse/)
+![Quiz page testing for mobile](docs/testing/lighthouse/lighthouse-mobile-quiz.png)
 * Quiz page testing for desktop
-![Quiz page testing for desktop](docs/testing/lighthouse/)
+![Quiz page testing for desktop](docs/testing/lighthouse/lighthouse-desktop-quiz.png)
 * Scoreboard page testing for mobile
-![Scoreboard page testing for mobile](docs/testing/lighthouse/)
+![Scoreboard page testing for mobile](docs/testing/lighthouse/lighthouse-mobile-scoreboard.png)
 * Scoreboard page testing for desktop
-![Scoreboard page testing for desktop](docs/testing/lighthouse/)
+![Scoreboard page testing for desktop](docs/testing/lighthouse/lighthouse-desktop-scoreboard.png)
 * 404 page testing for mobile
-![404 page testing for mobile](docs/testing/lighthouse/)
+![404 page testing for mobile](docs/testing/lighthouse/lighthouse-mobile-404.png)
 * 404 page testing for desktop
-![404 page testing for desktop](docs/testing/lighthouse/)
+![404 page testing for desktop](docs/testing/lighthouse/lighthouse-desktop-404.png)
 
 ### Manual Testing
 * Tested responsiveness with the different dimensions in dev tools and via [Responsive design checker](https://responsivedesignchecker.com/).
