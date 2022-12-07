@@ -60,7 +60,7 @@ a {
 
 /* Start Quiz and Scoreboard divs */
 #start-quiz, #scoreboard {
-    margin: 30px;
+    margin: 15px;
 }
 
 /* Buttons */
@@ -68,10 +68,14 @@ a {
     font-size: 18px;
     width: auto;
     padding: 15px;
+    margin: 15px;
     border-radius: 12px;
     color: #114411;
     background-color: rgb(182, 190, 191, 0.5);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
 }
 
 .btn:hover {
@@ -161,6 +165,14 @@ a {
     padding: 30px;
 }
 
+/* Form to enter name and submit score */
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Input area to enter name to submit score */
 #name {
     font-size: 18px;
@@ -168,6 +180,10 @@ a {
     border-radius: 12px;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+#submit-score {
+    width: auto;
 }
 
 /* Scoreboard container div */
