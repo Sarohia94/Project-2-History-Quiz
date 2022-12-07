@@ -94,25 +94,25 @@ This was obtained from the [Coolors](https://coolors.co/) website.
 
 Google Fonts were used as below:
 
-* Rubik Distressed is used for the headings. 
+* Rubik Distressed is used for the heading. 
 
 * Noto Serif Khojki is used for the body of the text. It is a sans-serif font.
 
 ### Imagery
 
-One image was used for the background which set the theme of the website. Image of the sky with war planes was taken from the [War History Online](https://www.warhistoryonline.com/wp-content/uploads/sites/64/2018/08/no-15-squadron-raf-stirlings-mk-i-and-hurricane-escorts-1.jpg) website and can be found in the credits section.
+One image was used for the background, which set the theme of the website. Image of the sky with war planes was taken from the [War History Online](https://www.warhistoryonline.com/wp-content/uploads/sites/64/2018/08/no-15-squadron-raf-stirlings-mk-i-and-hurricane-escorts-1.jpg) website and can be found in the credits section.
 
 ### Wireframes
 
 Wireframes were created for destop/tablet and mobile.
 
-* Home page wireframe can be found here for [desktop/tablet](docs/wireframes/) and here for [mobile](docs/wireframes/).
+* Home page wireframe can be found for [desktop](docs/wireframes/desktop-home.png), [tablet](docs/wireframes/tablet-home.png) and [mobile](docs/wireframes/mobile-home.png).
 
-* Quiz page wireframe can be found here for [desktop/tablet](docs/wireframes/guidedesktop.png) and here for [mobile](docs/wireframes/guidemobile.png).
+* Quiz page wireframe can be found for [desktop](docs/wireframes/desktop-question.png), [tablet](docs/wireframes/tablet-question.png) and [mobile](docs/wireframes/mobile-question.png).
 
-* Submit score page wireframe can be found here for [desktop/tablet](docs/wireframes/) and here for [mobile](docs/wireframes/).
+* Submit score page wireframe can be found for [desktop](docs/wireframes/desktop-final-score.png), [tablet](docs/wireframes/tablet-final-score.png) and [mobile](docs/wireframes/mobile-final-score.png).
 
-* Scoreboard page wireframe can be found here for [desktop/tablet](docs/wireframes/) and here for [mobile](docs/wireframes/).
+* Scoreboard page wireframe can be found for [desktop](docs/wireframes/desktop-scoreboard.png), [tablet](docs/wireframes/tablet-scoreboard.png) and [mobile](docs/wireframes/mobile-scoreboard.png).
 
 ### Features
 
