@@ -1,5 +1,5 @@
 // Questions array which is imported from questions.js 
-import { myQuestions } from "./questions.js";
+import {myQuestions} from "./questions.js";
 
 // Set variable for score number
 let scoreNo = 0;
