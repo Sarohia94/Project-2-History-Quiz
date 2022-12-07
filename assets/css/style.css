@@ -203,7 +203,7 @@ form {
     padding-bottom: 15px;
 }
 
-/* Media queries - for tablets screens and larger  */
+/* Media queries - for tablet screens and larger  */
 @media only screen and (min-width : 575px) {
     h2 {
         font-size: 24px;
@@ -212,10 +212,6 @@ form {
 
     #quiz-type {
         font-size: 30px;
-    }
-
-    #start-quiz, #scoreboard {
-        margin: 30px;
     }
 
     .btn {
@@ -246,5 +242,3 @@ form {
         font-size: 24px;
     }
 }
-
-/* Media queries - for laptop screens and larger  */
