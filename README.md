@@ -124,11 +124,17 @@ The webiste is responsive on a range of device sizes and have:
   
 * The title and subtitle at the top of every page. Where the title is a clickable link back to the home page.
 
-  ![Favicon feature](docs/features/feature2.png)
+  ![Title feature](docs/features/feature2.png)
 
 * Home page
-  * 
-  * 
+  * The home page has a brief introductory message before providing two buttons to either start the quiz or view the scoreboard.
+
+  ![Home page on different screen sizes](docs/features/feature3.png)
+
+  * The buttons change color when hovered over to bring them to attention to the user.
+
+  ![Home page buttons showing interactivity](docs/features/feature4.gif)
+
 * Quiz page
   * 
   * 
