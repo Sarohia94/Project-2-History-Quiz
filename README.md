@@ -1,12 +1,12 @@
 # History Quiz - Modern Warfare
 
-This history quiz is designed to test your knowledge on trivia related to modern warfare. The purpose of the site is to measure your knowledge in modern warfare. It is a short quiz which covers the period from the end of the 19th century to present day.
+This history quiz is designed to test your knowledge on trivia related to modern warfare. It is a short quiz which covers the period from the end of the 19th century to present day.
 
 The home page directs you to start the quiz or view the scoreboard where the top 5 high scorers are ranked. The quiz consists of 10 multiple choice questions. Upon completion you receive a total score and an option to submit your score by entering your name.
 
-![Website shown on a range of devices](docs/amiresponsive.png)
-
 [View quiz on Github Pages](https://sarohia94.github.io/Project-2-History-Quiz/)
+
+![Website shown on a range of devices](docs/amiresponsive.png)
 
 * [User Experience (UX)](#User-Experience-(UX))
   * [Initial Discussion](#Initial-Discussion)
