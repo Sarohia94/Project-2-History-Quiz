@@ -208,10 +208,10 @@ The website achieves accessibility with:
 - - -
 
 ## Testing 
-Issues raised in my mid project meeting with my mentor:
+Issues raised in my mid project meeting with my mentor [Chris Quinn](https://github.com/10xOXR) :
   1. ![Issue with ](docs/testing/issues/)
   2. 
-  3. Mentor [Chris Quinn](https://github.com/10xOXR) 
+  3. 
 Issues faced before submitting my project for review on Slack:
   1. 
 Issues raised as part of feedback from the peer code review on slack:
@@ -238,30 +238,14 @@ No issues with the Javascript pages:
 
 ### Solved Bugs
 Issues faced and resolved before my mid project meeting:
-  1. 
+  1. ![Issue ](docs/testing/issues/)
   2. 
-  ![Issue ](docs/testing/issues/)
   3. 
   4. 
   5. 
 
 ### Known Bugs
   1. 
-
-### Testing User Stories
-* First Time Visitors
-  * 
-  [Home page ](docs/testing/userstories/)
-  * 
-  * 
-  * 
-  
-* Returning Visitors
-  * 
-  * 
-
-* Frequent Visitor Goals
-  * 
 
 ### Lighthouse
 * Home page testing for mobile
