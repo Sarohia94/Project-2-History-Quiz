@@ -158,8 +158,10 @@ The website is responsive on a range of device sizes and has:
     ![Submit score page button showing interactivity](docs/features/feature8.gif)
 
 * Scoreboard page
-  * 
-  * 
+  * Scoreboard is accessible from the home page or will be displayed as the user submits their score. From the scoreboard the user has the option to start quiz or return home.
+
+    ![Scoreboard page on different screen sizes](docs/features/feature9.png)
+  
 * 404 Error page
   * 
   * 
