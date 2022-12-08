@@ -96,9 +96,9 @@ The containers for the quiz and scoreboard and the buttons use #B6BEBF and #F3F3
 
 Google Fonts were used as below:
 
-* Rubik Distressed is used for the heading. 
+* Rubik Distressed is used for the title, as I liked the distressed look. I think this fits the aesthetic associated with modern warfare.
 
-* Noto Serif Khojki is used for the body of the text. It is a sans-serif font.
+* Noto Serif Khojki is used for the body of the text. It is a sans-serif font. This provides a nice clean look for the core body of the text for easy readability and it juxtaposes well against the title text.
 
 ### Imagery
 
