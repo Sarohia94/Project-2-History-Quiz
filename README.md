@@ -232,9 +232,9 @@ Final issues raised following the end project meeting with my mentor:
 
 ### JSHint Validator
 No issues with the Javascript pages:
-* [script.js](docs/testing/jshint/)
-* [questions.js](docs/testing/jshint/)
-* [highscores.js](docs/testing/jshint/) 
+* [script.js](docs/testing/jshint/jshint-script.jpeg)
+* [questions.js](docs/testing/jshint/jshint-questions.jpeg)
+* [highscores.js](docs/testing/jshint/jshint-highscores.jpeg) 
 
 ### Solved Bugs
 Issues faced and resolved before my mid project meeting:
