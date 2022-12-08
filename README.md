@@ -116,7 +116,7 @@ Wireframes were created for destop, tablet and mobile.
 
 * Scoreboard page wireframe can be found for [desktop](docs/wireframes/desktop-scoreboard.png), [tablet](docs/wireframes/tablet-scoreboard.png) and [mobile](docs/wireframes/mobile-scoreboard.png).
 
-### Features
+# Features
 
 Website consists of a home page, a quiz page, a scoreboard page and a 404 error page.
 The website is responsive on a range of device sizes and has:
@@ -207,7 +207,7 @@ The website achieves accessibility with:
 
 - - -
 
-## Testing 
+# Testing 
 Issues raised in my mid project meeting with my mentor [Chris Quinn](https://github.com/10xOXR) :
   1. ![Issue with ](docs/testing/issues/)
   2. 

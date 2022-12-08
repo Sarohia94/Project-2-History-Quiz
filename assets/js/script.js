@@ -105,22 +105,15 @@ startQuiz();
  */
 // Save scores - used tutorial from https://www.youtube.com/watch?v=DFhmNLKwwGw&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=10
 function saveScore(e) {
-    // Prevent form posting on a new page
     e.preventDefault();
-    // Log object to hold name & high score
     const log = {
         name: yourName.value,
         score: scoreNo
     };
-    // Push log object into high scores list
     highScores.push(log);
-    // Sort score by value
     highScores.sort((a, b) => b.score - a.score);
-    // Set high score list up to 5
     highScores.splice(5);
-    // Update high score to local storage
     localStorage.setItem("highScores", JSON.stringify(highScores));
-    // Display to scoreboard.html
     window.location.assign("scoreboard.html");
 }
 
