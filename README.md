@@ -102,7 +102,7 @@ Google Fonts were used as below:
 
 ### Imagery
 
-One image was used for the background, which set the theme of the website. Image of the sky with war planes was taken from the [War History Online](https://www.warhistoryonline.com/wp-content/uploads/sites/64/2018/08/no-15-squadron-raf-stirlings-mk-i-and-hurricane-escorts-1.jpg) website and can be found in the credits section.
+One image was used for the background, which I think nicely sets the theme of the website without being too distracting. The image used of the sky with war planes was taken from the [War History Online](https://www.warhistoryonline.com/wp-content/uploads/sites/64/2018/08/no-15-squadron-raf-stirlings-mk-i-and-hurricane-escorts-1.jpg) website and can be found in the credits section.
 
 ### Wireframes
 
