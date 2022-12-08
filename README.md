@@ -163,8 +163,10 @@ The website is responsive on a range of device sizes and has:
     ![Scoreboard page on different screen sizes](docs/features/feature9.png)
   
 * 404 Error page
-  * 
-  * 
+  * The error page is formatted to the same style as the main website. It contains a message apologising to the user that the requested web page doesn't exist. It then directs the user to chose to either go to home, start quiz or scoreboard.
+  
+    ![404 error page on different screen sizes](docs/features/feature10.png)
+  
 * Future features
   * 
   * 
