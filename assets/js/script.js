@@ -55,7 +55,8 @@ function setNextQuestion() {
  * where an answer is clicked the check answer function is called
  */
 function displayQuestion() {
-    question.innerText = myQuestions[currentQuestionIndex].question; // Tutor support from Oisin on how to target the question property of the array using the currentQuestionIndex
+    // Tutor support from Oisin on how to target the question property of the array using the currentQuestionIndex
+    question.innerText = myQuestions[currentQuestionIndex].question; 
     for (let i = 0; i < answersClass.length; i++) {
         answersClass[i].innerText = (myQuestions[currentQuestionIndex].answers["answer" + (i + 1)]); // Tutor support from Jason on how to target answer choices
         answersClass[i].addEventListener("click", checkAnswer);
