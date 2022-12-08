@@ -87,7 +87,9 @@ A multiple choice quiz to test knowlege on modern warfare history.
 ## Design
 
 ### Colour Scheme
-This was obtained from the [Coolors](https://coolors.co/) website.
+This was obtained from the [Coolors](https://coolors.co/) website. 
+The colours used for text are #78290F and #114411 as they stand out against the background image and nicely complement eachother. 
+The containers for the quiz and scoreboard and the buttons use #B6BEBF and #F3F3F4 which provides a clean look against the background image used.
 ![Colour palette for the website](docs/colourpalette.png)
 
 ### Typography
