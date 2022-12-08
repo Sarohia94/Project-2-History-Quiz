@@ -224,12 +224,11 @@ Final issues raised following the end project meeting with my mentor:
   3. 
 
 ### W3C Validator 
-No issues with the HTML pages or CSS:
-* [index.html](docs/testing/w3c/)
-* [quiz.html](docs/testing/w3c/)
-* [scoreboard.html](docs/testing/w3c/)
-* [404.html](docs/testing/w3c/)
-* [style.css](docs/testing/w3c/)
+* [index.html](docs/testing/w3c/w3c-home.png) - no issues.
+* [quiz.html](docs/testing/w3c/w3c-quiz.png) - 1 warning for an empty H2 tag. This is where the question is inserted using Javascript.
+* [scoreboard.html](docs/testing/w3c/w3c-scoreboard.png) - no issues.
+* [404.html](docs/testing/w3c/w3c-404.png) - no issues.
+* [style.css](docs/testing/w3c/) - no issues.
 
 ### JSHint Validator
 No issues with the Javascript pages:
