@@ -189,19 +189,21 @@ The website achieves accessibility with:
 * Javascript
 
 ### Frameworks, Libraries & Programs Used
+* [Am I responsive?](https://ui.dev/amiresponsive) - to show website across a range of devices.
+* Balsamic - to create the wireframes when designing the website.
+* Dev Tools - for testing and troubleshooting.
+* [Favicon.io](https://favicon.io/favicon-generator/) - to creat favicon icon for the website.
 * Git - for version control. Using GitPod terminal to commit to Git and push to GitHub.
 * GitHub - to save and store the code pushed from Git.
-* Balsamic - to create the wireframes when designing the website.
 * [Google Fonts](https://fonts.google.com/) - to import font to apply on the website.
-* Dev Tools - for testing and troubleshooting.
-* [Am I responsive?](https://ui.dev/amiresponsive) - to show website across a range of devices.
-* [Wave](https://wave.webaim.org/) - to test web accessibility.
-* [W3C](https://validator.w3.org/) - HTML validator.
-* [Jigsaw](https://jigsaw.w3.org/css-validator/) - CSS validator.
 * Hover.css - to make the nav bar, footer links and the sign up button interactive.
-* [Tiny PNG](https://tinypng.com/) - to compress images.
+* [Jigsaw](https://jigsaw.w3.org/css-validator/) - CSS validator.
+* [Jshint](https://jshint.com/) - to check for errors and problems with javascript code.
 * [Responsive design checker](https://responsivedesignchecker.com/) - to check responsive design for a variety of screen sizes.
-* [Favicon.io](https://favicon.io/favicon-generator/) - to creat favicon icon for the website.
+* [Tiny PNG](https://tinypng.com/) - to compress images.
+* [W3C](https://validator.w3.org/) - HTML validator.
+* [Wave](https://wave.webaim.org/) - to test web accessibility.
+* Webpage Disability Simulator - a google chrome extension that lets see how people with disabilities view the web.
 
 - - -
 
