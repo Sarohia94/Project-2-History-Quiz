@@ -164,13 +164,13 @@ The website is responsive on a range of device sizes and has:
   
 * 404 Error page
   * The error page is formatted to the same style as the main website. It contains a message apologising to the user that the requested web page doesn't exist. It then directs the user to chose to either go to home, start quiz or scoreboard.
-  
+
     ![404 error page on different screen sizes](docs/features/feature10.png)
   
 * Future features
-  * 
-  * 
-  * 
+  * In future implementations I'd like to create a few different quizes so that there are multiple options to choose from, that either range from question length or difficulty. 
+  * I would look to add a pop up function that displays some context about the question being asked and the correct answer to make it more of a learning experience.
+  * I would like to make the website more accessible as having colors signify correct or incorrect answers is not wholly exclusive, for example to those with colour blindness.
   
 ### Accessibility 
 The website achieves accessibility with:
