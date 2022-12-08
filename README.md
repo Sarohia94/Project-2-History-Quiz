@@ -144,9 +144,9 @@ The website is responsive on a range of device sizes and has:
 
   * The answer buttons are interactive. They change colour as you hover over them. They also change colour when answered correctly or incorrectly. 
   If the user answers correctly the colour changes to green for a second before moving on to the next question. The question number and score will increment by 1. 
-  If the user answers incorrectly the colour changes to red for a second before moving on to the next question. The question number will increment by 1 whereas the score count will remain unchanged.
+  If the user answers incorrectly the colour changes to red for a second before moving on to the next question. The question number will increment by 1 as before but the score count will remain unchanged.
 
-   ![Quiz page buttons showing interactivity](docs/features/feature6.gif)
+    ![Quiz page buttons showing interactivity](docs/features/feature6.gif)
   
 * Submit score page
   * 
