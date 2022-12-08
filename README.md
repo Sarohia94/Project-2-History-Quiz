@@ -149,9 +149,14 @@ The website is responsive on a range of device sizes and has:
     ![Quiz page buttons showing interactivity](docs/features/feature6.gif)
   
 * Submit score page
-  * 
-  * 
-  * 
+  * The page will appear only once the quiz has been completed. It will display your total score and invite the user to submit their score. The other options are to start the quiz again or return home.
+
+    ![Submit score page on different screen sizes](docs/features/feature7.png)
+
+  * As well as the bottons being interactive as before changing color as you hover over them, the submit button is disabled unless a name is populated in the form.
+  
+    ![Submit score page button showing interactivity](docs/features/feature8.gif)
+
 * Scoreboard page
   * 
   * 
