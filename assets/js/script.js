@@ -79,6 +79,7 @@ function checkAnswer() {
     } else {
         this.classList.add("incorrect");
     }
+    // Use of set time out method - https://www.youtube.com/watch?v=f4fB9Xg2JEY
     setTimeout(() => {
         this.classList.remove("correct");
         this.classList.remove("incorrect");
