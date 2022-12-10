@@ -211,9 +211,10 @@ The website achieves accessibility with:
 
 ## Testing 
 Issues raised in my mid project meeting with my mentor [Chris Quinn](https://github.com/10xOXR) :
-  1. It was pointed out that the score count should be labelled as such so that its function is clear to the user.
+  1. It was pointed out that the score count should be labelled as such so that its function is clear to the user. This was updated to read score before the score count display.
   ![Issue with score count not being clearly labelled](docs/testing/issues/issue1.png)
-  2. 
+  2. It was advised having the alert, notifying a correct or incorrect answer, is not a great user experience especially when using a mobile. This was amended to change colour upon the correct or incorrect answer selection.
+  ![Issue with alert as user picks an answer](docs/testing/issues/issue2.png)
   3. 
 Issues raised as part of feedback from the peer code review on slack:
   1. 
