@@ -211,11 +211,10 @@ The website achieves accessibility with:
 
 ## Testing 
 Issues raised in my mid project meeting with my mentor [Chris Quinn](https://github.com/10xOXR) :
-  1. ![Issue with ](docs/testing/issues/)
+  1. It was pointed out that the score count should be labelled as such so that its function is clear to the user.
+  ![Issue with score count not being clearly labelled](docs/testing/issues/issue1.png)
   2. 
   3. 
-Issues faced before submitting my project for review on Slack:
-  1. 
 Issues raised as part of feedback from the peer code review on slack:
   1. 
   2. 
