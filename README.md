@@ -218,9 +218,6 @@ Issues raised in my project meetings with my mentor [Chris Quinn](https://github
   3. It was advised due to the size it might be prudent to move the questions array from script.js and into it's own javascript file. The questions array was moved to question.js file and javascript import and export was used to call the questions array in script.js file to run the quiz.
   4. It was advised to reduce step by step comments in the script.js file. This was removed as this was more for my benefit to help map out the code but was no longer required.
 
-Issues raised as part of feedback from the peer code review on slack:
-  * 
-
 ### Solved Bugs
   1. Issue trying to get questions to display with javascript. The display question function was returning undefined in the console. Oisin from tutor support advised using a global variable to keep track of the index of the current question in order to access questions from the array to display. 
   2. Issue getting answers choices to display with javascript. The display question function was returning undefined. Jason from tutor support advised that my answers are in a dictionary, within an array, so I would need to call it by name in order to display them. This was an unfortunate oversight on my part as I made it more difficult to call by not writing my questions array cleanly to make it accessible. To address the values by name, rather than by index the answer needed to be within brackets so that it is a string. Also i+1 is needed as my answers choices start with answer1, but i starts as 0.
@@ -268,9 +265,8 @@ No issues with the Javascript pages:
 
 ### Manual Testing
 * Tested responsiveness with the different dimensions in dev tools and via [Responsive design checker](https://responsivedesignchecker.com/).
-* Tested website on mobile with [Chrome](docs/testing/manualtesting/) & [Samsung internet](docs/testing/manualtesting/)
-* Tested on tablet with [Amazon Silk browser](docs/testing/manualtesting/), laptop with [Microsoft Edge](docs/testing/manualtesting/) and desktop with [Microsoft Edge](docs/testing/manualtesting/).
-* Tested via peer review on ...
+* Tested website on mobile with [Chrome](docs/testing/manualtesting/chrome-mobile.jpg) & [Samsung internet](docs/testing/manualtesting/samsunginternet-mobile.jpg)
+* Tested on tablet with [Amazon Silk browser](docs/testing/manualtesting/amazonsilkbrowser-tablet.png), laptop with [Microsoft Edge](docs/testing/manualtesting/microsoftedge-laptop.png) and desktop with [Microsoft Edge](docs/testing/manualtesting/microsoftedge-desktop.png).
 * Tested all hyperlinks 
 * Tested submit score form. Name left blank will disable the submit button.
 * Tested Scoreboard page, top 5 scores are logged in number order.
