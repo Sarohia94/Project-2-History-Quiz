@@ -58,7 +58,8 @@ function displayQuestion() {
     // Tutor support from Oisin on how to target the question property of the array using the currentQuestionIndex
     question.innerText = myQuestions[currentQuestionIndex].question; 
     for (let i = 0; i < answersClass.length; i++) {
-        answersClass[i].innerText = (myQuestions[currentQuestionIndex].answers["answer" + (i + 1)]); // Tutor support from Jason on how to target answer choices
+        // Tutor support from Jason on how to target answer choices
+        answersClass[i].innerText = (myQuestions[currentQuestionIndex].answers["answer" + (i + 1)]); 
         answersClass[i].addEventListener("click", checkAnswer);
     }
 }
