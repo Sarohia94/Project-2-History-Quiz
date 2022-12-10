@@ -88,7 +88,7 @@ A multiple choice quiz to test knowlege on modern warfare history.
 
 ### Colour Scheme
 This was obtained from the [Coolors](https://coolors.co/) website. 
-The colours used for text are #78290F and #114411 as they stand out against the background image and nicely complement eachother. 
+The colours used for text are #78290F and #114411 as they stand out against the background image and nicely complement each other. 
 The containers for the quiz and scoreboard and the buttons use #B6BEBF and #F3F3F4 which provides a clean look against the background image used.
 ![Colour palette for the website](docs/colourpalette.png)
 
@@ -165,14 +165,14 @@ The website is responsive on a range of device sizes and has:
     ![Scoreboard page on different screen sizes](docs/features/feature9.png)
   
 * 404 Error page
-  * The error page is formatted to the same style as the main website. It contains a message apologising to the user that the requested web page doesn't exist. It then directs the user to chose to either go to home, start quiz or scoreboard.
+  * The error page is formatted to the same style as the main website. It contains a message apologising to the user that the requested web page doesn't exist. It then directs the user to choose to either go to home, start quiz or view the scoreboard.
 
     ![404 error page on different screen sizes](docs/features/feature10.png)
   
 * Future features
   * In future implementations I'd like to create a few different quizes so that there are multiple options to choose from, that either range from question length or difficulty. 
   * I would look to add a pop up function that displays some context about the question being asked and the correct answer to make it more of a learning experience.
-  * I would like to make the website more accessible as having colors signify correct or incorrect answers is not wholly exclusive, for example to those with colour blindness.
+  * I would like to make the website more accessible as having colors signify correct or incorrect answers is not wholly inclusive for all users. For example to those with colour blindness.
   
 ### Accessibility 
 The website achieves accessibility with:
@@ -230,7 +230,7 @@ Final issues raised following the end project meeting with my mentor:
 * [quiz.html](docs/testing/w3c/w3c-quiz.png) - 1 warning for an empty H2 tag. This is where the question is inserted using Javascript.
 * [scoreboard.html](docs/testing/w3c/w3c-scoreboard.png) - no issues.
 * [404.html](docs/testing/w3c/w3c-404.png) - no issues.
-* [style.css](docs/testing/w3c/) - no issues.
+* [style.css](docs/testing/w3c/w3c-css.png) - no issues.
 
 ### JSHint Validator
 No issues with the Javascript pages:
