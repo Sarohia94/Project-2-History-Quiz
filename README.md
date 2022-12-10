@@ -224,7 +224,7 @@ Issues raised as part of feedback from the peer code review on slack:
 ### Solved Bugs
   1. Issue trying to get questions to display with javascript. The display question function was returning undefined in the console. Oisin from tutor support advised using a global variable to keep track of the index of the current question in order to access questions from the array to display. 
   2. Issue getting answers choices to display with javascript. The display question function was returning undefined. Jason from tutor support advised that my answers are in a dictionary, within an array, so I would need to call it by name in order to display them. This was an unfortunate oversight on my part as I made it more difficult to call by not writing my questions array cleanly to make it accessible. To address the values by name, rather than by index the answer needed to be within brackets so that it is a string. Also i+1 is needed as my answers choices start with answer1, but i starts as 0.
-  3. 
+  3. Issue getting the checkAnswer function to check the users answer. The initial thought process was to define a user answer variable by calling the name of the chosen answer and then use an if else statement check against the correct answer from the array. But due to the way I had the questions array set up this made the code convoluted and tricky. Sean from tutor support advised using the "this" keyword which made it simple.
   4. 
   5. 
 
