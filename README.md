@@ -17,7 +17,8 @@ The home page directs you to start the quiz or view the scoreboard where the top
   * [Typography](#Typography)
   * [Imagery](#Imagery)
   * [Wireframes](#Wireframes)
-  * [Features](#Features)
+  
+* [Features](#Features)
   * [Accessibility](#Accessibility)
 
 * [Technologies Used](#Technologies-Used)
@@ -28,13 +29,12 @@ The home page directs you to start the quiz or view the scoreboard where the top
   * [W3C Validator](#W3C-Validator)
   * [Solved Bugs](#Solved-Bugs)
   * [Known Bugs](#Known-Bugs)
-  * [Testing User Stories](#Testing-User-Stories)
   * [Lighthouse](#Lighthouse)
   * [Manual Testing](#Manual-Testing)
 
-  * [Deployment](#Deployment)
-    * [Local Deployment](#Local-Deployment)
-    * [Remote Deployment](#Remote-Deployment)
+* [Deployment](#Deployment)
+  * [Local Deployment](#Local-Deployment)
+  * [Remote Deployment](#Remote-Deployment)
   
 * [Credits](#Credits)
   * [Code](#Code)
