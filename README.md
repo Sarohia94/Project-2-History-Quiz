@@ -224,7 +224,7 @@ Issues raised as part of feedback from the peer code review on slack:
 ### Solved Bugs
   1. Issue trying to get questions to display with javascript. The display question function was returning undefined in the console. Oisin from tutor support advised using a global variable to keep track of the index of the current question in order to access questions from the array to display. 
   2. Issue getting answers choices to display with javascript. The display question function was returning undefined. Jason from tutor support advised that my answers are in a dictionary, within an array, so I would need to call it by name in order to display them. This was an unfortunate oversight on my part as I made it more difficult to call by not writing my questions array cleanly to make it accessible. To address the values by name, rather than by index the answer needed to be within brackets so that it is a string. Also i+1 is needed as my answers choices start with answer1, but i starts as 0.
-  3. Issue getting the checkAnswer function to check the users answer. The initial thought process was to define a user answer variable by calling the name of the chosen answer and then use an if else statement check against the correct answer from the array. But due to the way I had the questions array set up this made the code convoluted and tricky. Sean from tutor support advised using the "this" keyword which made it simple.
+  3. Issue getting the check answer function to check the users answer. The initial thought process was to define a user answer variable by calling the name of the chosen answer and then use an if else statement check against the correct answer from the array. But due to the way I had the questions array set up this made the code convoluted and tricky. Sean from tutor support advised using the "this" keyword which made it simple.
   4. The check answer function alerts would throw correct for incorrect answers and vice versa. It seems this was because of an index issue. Joshua from tutor support advised me to look to look at the "currentQuestionIndex ++" placement. As this was incremented in the display question function which ran before the check answer function the alerts were for the follwing question. This was moved in to the check answer function which resolved the issue.
   5. Issue getting the scores from the local storage to log on to the scoreboard. John from tutor support pointed out as the scripts were contained in one file, but for different pages certain elements are not there, the code throws an error and thus the rest of the code does not get read. Following this realisation the script calling the high scores from the local storage to display them as a list item, was moved on to a separate js file. The html scripts were then updated to only load the relevant script required for each page.
 
@@ -232,7 +232,7 @@ Issues raised as part of feedback from the peer code review on slack:
   1. The suitable min-width for the quiz is 350px. For screen sizes smaller than this you would need to scroll horizontally to view the full title. I was advised by my mentor that this would not be an issue as the current standard for mobile screen sizes is min 360px.
   
   ![Known issue for small screen size 320 x 480 example](docs/testing/issues/known-issue.png)
-  
+
   2. The scoreboard will log the top 5 scorers in rank order. However, what has not been accounted for is if all scorers get 10/10 then how will this be logged. A possibility is to have the local storage cleared on a periodic basis.
 
 ### W3C Validator 
@@ -307,17 +307,17 @@ The website was deployed to GitHub Pages as follows:
 ## Credits
 
 ### Code
-* 
-* 
-* 
+* The [Build A Quiz App With JavaScript](https://www.youtube.com/watch?v=riDzcEQbX6k) tutorial was useful in giving me an idea how to build the quiz. Most notably I used this to learn how to shuffle questions.
+* The [Build a Quiz App](https://www.youtube.com/watch?v=DFhmNLKwwGw&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=11) was a useful tutorial on how to save high scores in local storage. The [other tutorial](https://www.youtube.com/watch?v=jfOv18lCMmw&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=10) was useful to learn how to load and dispay the high scores from local storage.
+* The [How to Make a Quiz App using HTML CSS Javascript](https://www.youtube.com/watch?v=f4fB9Xg2JEY) was a useful tutorial that introduced me to the javascript set time out method which I then used in my check answer function.
+* Oisin from tutor support advised using a global variable to keep track of the index of the current question in order to access questions from the array to display.
+* Jason from tutor support advised that my answers are in a dictionary, within an array, so I would need to call it by name in order to display them. He advised on how to write the code: "(myQuestions[currentQuestionIndex].answers["answer" + (i + 1)])"
+* Sean from tutor support advised on how to use the "this" keyword for my check answer function.
 * Favicon icon and link tags code from [Favicon.io](https://favicon.io/favicon-generator/) website.
 
 ### Content
 * The content was written by the developer Amritpreet Sarohia.
-* 
-* 
-* 
-* 
+* Questions were sourced from the web researching modern warfare. In particular the [IWN](https://www.iwm.org.uk/history/timeline-of-20th-and-21st-century-wars) timeline was useful in deciding the type of questions to pick from a range of historical events.
 
 ### Media
 [War History Online](https://www.warhistoryonline.com/wp-content/uploads/sites/64/2018/08/no-15-squadron-raf-stirlings-mk-i-and-hurricane-escorts-1.jpg) website. 
