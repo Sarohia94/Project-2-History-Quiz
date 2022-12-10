@@ -222,7 +222,7 @@ Issues raised as part of feedback from the peer code review on slack:
   * 
 
 ### Solved Bugs
-  1. ![Issue ](docs/testing/issues/)
+  1. Issue trying to get questions to display with javascript. The display question function was returning undefined in the console. Oisin from tutor support advised using a global variable to keep track of the index of the current question in order to access questions from the array to display. 
   2. 
   3. 
   4. 
