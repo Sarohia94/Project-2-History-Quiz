@@ -215,7 +215,7 @@ Issues raised in my mid project meeting with my mentor [Chris Quinn](https://git
   ![Issue with score count not being clearly labelled](docs/testing/issues/issue1.png)
   2. It was advised having the alert, notifying a correct or incorrect answer, is not a great user experience especially when using a mobile. This was amended to change colour upon the correct or incorrect answer selection.
   ![Issue with alert as user picks an answer](docs/testing/issues/issue2.png)
-  3. 
+  3. It was advised due to the size it might be prudent to move the questions array from script.js and into it's own javascript file. The questions array was moved to question.js file and javascript import and export was used to call the questions array in script.js file to run the quiz.
 Issues raised as part of feedback from the peer code review on slack:
   1. 
   2. 
