@@ -283,13 +283,13 @@ No issues with the Javascript pages:
 
 #### How to Clone
 1. Sign up or log in to GitHub
-2. Go to the repository https://github.com/Sarohia94/Project-1-skinfirst 
+2. Go to the repository https://github.com/Sarohia94/Project-2-History-Quiz
 3. Go to the code dropdown and select how you'd like clone and copy the link provided
 4. Go to the new repo and enter in your workspace terminal, "git clone" followed by the link copied
 
 #### How to Fork
 1. Sign up or log in to GitHub
-2. Go to the repository https://github.com/Sarohia94/Project-1-skinfirst 
+2. Go to the repository https://github.com/Sarohia94/Project-2-History-Quiz
 3. Click on the fork button towards the top right of the page 
 
 ### Remote Deployment
@@ -326,4 +326,4 @@ The website was deployed to GitHub Pages as follows:
 Thank you to anyone taking the time to view my first quiz and second project. Special thanks to the Slack community and the below individuals:
 * [Chris Quinn](https://github.com/10xOXR), my mentor. Thank you for your guidance and feedback.
 * To the tutors from tutor support for their help and assistance: Sean, Oisin, Jason, Joshua and John.
-* [Gemma Sayers](https://github.com/GJSayers) for her assistance on Slack.
+* [Gemma Sayers](https://github.com/GJSayers) for her assistance.
