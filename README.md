@@ -245,7 +245,11 @@ Issues faced and resolved before my mid project meeting:
   5. 
 
 ### Known Bugs
-  1. 
+  1. The suitable min-width for the quiz is 350px. For screen sizes smaller than this you would need to scroll horizontally to view the full title. I was advised by my mentor that this would not be an issue as the current standard for mobile screen sizes is min 360px.
+  
+  ![Known issue for small screen size 320 x 480 example](docs/testing/issues/known-issue.png)
+  
+  2. The scoreboard will log the top 5 scorers in rank order. However, what has not been accounted for is if all scorers get 10/10 then how will this be logged. A possibility is to have the local storage cleared on a periodic basis.
 
 ### Lighthouse
 * Home page testing for mobile
