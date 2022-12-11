@@ -40,7 +40,7 @@ The home page directs you to start the quiz or view the scoreboard where the top
   * [Code](#Code)
   * [Content](#Content)
   * [Media](#Media)
-  * [Acknowledgments](#Acknowledgments)
+  * [Acknowledgements](#Acknowledgements)
 
 - - -
 
